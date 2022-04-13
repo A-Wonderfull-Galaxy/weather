@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/weather-style.css">
+    <!--materialize-->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <title>Weather</title>
+</head>
+
+<body>
+    
+    <!--weather dashboard-->
+    <header>
+        <div class="header">
+            <h1 class="center">Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <!--city and search-->
+            <div class="col">
+                <div class="col" id="search-container">
+                    <form class="input-field">
+                        <i class="material-icons prefix"></i>
+                        <input type="text" id="search-city" class="search-city-input">
+                        <button class="btn-search" id="btn-search" type="submit">search</button>
+                    </form>
+                </div>
+                <div class="search-history col"> </div>
+            </div>
+            
+            <!--todays forecast-->
+            <div id="today">
+                <h2 class="heading"> <span id="selected-city"></span>: <span id="today-date"></span></h2>
+                <img src="" alt="" class="today-weather-icon">
+                <p>Temp: <span id="today-temp"></span> F</p>
+                <p>Wind: <span id="today-wind"></span> MPH</p>
+                <p>Humidity: <span id="today-humid"></span> %</p>
+            </div>
+
+            <!--5 day forecast-->
+            <div class="row">
+                <div class="five-day-title">
+                    <span>5 Day Forecast</span>
+                </div>
+                <div class="row five-days">
+                    <div class="card col forecast">
+                        <img src="" alt="">
+                        <p class="five-day-date">01/01/2022</p>                       
+                        <p class="five-day-temp">Temp: </p>
+                        <p class="five-day-wind">Wind: </p>
+                        <p class="five-day-humid">Humidity: </p>
+                    </div>
+                    <div class="card col forecast">
+                        <img src="" alt="">
+                        <p class="five-day-date">01/02/2022</p>                       
+                        <p class="five-day-temp">Temp: </p>
+                        <p class="five-day-wind">Wind: </p>
+                        <p class="five-day-humid">Humidity: </p>
+                    </div>
+                    <div class="card col forecast">
+                        <img src="" alt="">
+                        <p class="five-day-date">01/03/2022</p>                       
+                        <p class="five-day-temp">Temp: </p>
+                        <p class="five-day-wind">Wind: </p>
+                        <p class="five-day-humid">Humidity: </p>
+                    </div>
+                    <div class="card col forecast">
+                        <img src="" alt="">
+                        <p class="five-day-date">01/04/2022</p>
+                        <p class="five-day-temp">Temp: </p>
+                        <p class="five-day-wind">Wind: </p>
+                        <p class="five-day-humid">Humidity: </p>
+                    </div>
+                    <div class="card col forecast">
+                        <img src="" alt="">
+                        <p class="five-day-date">01/05/2022</p>                      
+                        <p class="five-day-temp">Temp: </p>
+                        <p class="five-day-wind">Wind: </p>
+                        <p class="five-day-humid">Humidity: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/weather.js"></script>
+</body>
+</html>
