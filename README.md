@@ -1,3 +1,3 @@
 ## Weather dashboard
 
-kinda gave up
+This apps gets you the weather when you type in your zipcode and saves zipcodes for later researches
